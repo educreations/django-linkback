@@ -1,11 +1,9 @@
 #!/usr/bin/env python
 from setuptools import setup, find_packages
 
-VERSION = __import__('linkback').__version__
-
 setup(
     name="django-rawid-linkback",
-    version=VERSION,
+    version=1,
     author='Lincoln Loop: Nicolas Lara',
     author_email='info@lincolnloop.com',
     description=("An admin widget to show a link back to the original objects in foreign keys."),
@@ -20,7 +18,6 @@ setup(
     url="http://github.com/frewsxcv/django-linkback/",
     install_requires=['setuptools'],
     classifiers=[
-        'Development Status :: 0.1 - Beta',
         'Environment :: Web Environment',
         'Framework :: Django',
         'Intended Audience :: Developers',
