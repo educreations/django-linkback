@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="django-rawid-linkback",
-    version=1,
+    version="0.1-ec1-70860fd",
     author='Lincoln Loop: Nicolas Lara',
     author_email='info@lincolnloop.com',
     description=("An admin widget to show a link back to the original objects in foreign keys."),
