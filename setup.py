@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 VERSION = __import__('linkback').__version__
 
 setup(
-    name="django-linkback",
+    name="django-rawid-linkback",
     version=VERSION,
     author='Lincoln Loop: Nicolas Lara',
     author_email='info@lincolnloop.com',
@@ -17,7 +17,7 @@ setup(
         'templates/linkback/admin/*.html',
         'templates/linkback/admin/widgets/*.html'
     ]},
-    url="http://github.com/lincolnloop/django-linkback/",
+    url="http://github.com/frewsxcv/django-linkback/",
     install_requires=['setuptools'],
     classifiers=[
         'Development Status :: 0.1 - Beta',
