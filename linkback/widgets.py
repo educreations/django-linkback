@@ -99,11 +99,11 @@ class ForeignKeyRawIdWithLinkWidget(ForeignKeyRawIdWidget):
         name, value = args
         if not value:
             return result
+        named_url = 'admin:{}_{}_change'.format(
+            self.rel.to._meta.app_label,
+            self.rel.to._meta.object_name.lower())
+        url = reverse(named_url, args=(value,), current_app=self.admin_site.name)
         return mark_safe(
             result +
-            u' - <a href="../../../%s/%s/%s/">Admin Link</a>' % (
-                self.rel.to._meta.app_label,
-                self.rel.to._meta.object_name.lower(),
-                value,
-            )
+            u' - <a href="%s">Admin Link</a>' % (url)
         )
